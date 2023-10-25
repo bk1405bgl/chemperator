@@ -7,6 +7,7 @@
     <meta name="description" content="Chemperator ERP System for chemical industry businesses">
     <meta name="author" content="Bilal Kuzey">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b13124ec84.js" crossorigin="anonymous"></script>
 </head>
