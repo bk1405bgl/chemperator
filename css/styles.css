@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1em;
+}
+nav {
+    text-align: right;
+}
+a:link, a:visited {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    background-color: green;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+	display: inline;
+}
+main {
+	margin: 0 10% 0 10%;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+footer {
+    text-align: center;
+}
