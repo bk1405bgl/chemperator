@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/b13124ec84.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,9 +30,6 @@
 
         <nav>
             <ul>
-		<?php
-
-		?>
                 <li><a href="/">Home</a></li>
                 <li><a href="signin.php">Einloggen</a></li>
                 <li><a href="signup.php">Registrieren</a></li>
@@ -45,7 +41,7 @@
         </main>
         <footer>
             <div>
-                <p>Chemperator &copy;<?php echo date("Y");?></p>
+                <p>Chemperator &copy;<?= date("Y");?></p>
             </div>
         </footer>
     </div>
