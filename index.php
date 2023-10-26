@@ -13,21 +13,6 @@
 
 <body>
     <div>
-	<?php
-	class Links {
-		public $Link;
-	}
-	$HomeLink = new Links();
-	$InfoLink = new Links();
-	$SignInLink = new Links();
-	$SignUpLink = new Links();
-
-	$HomeLink->Link = "/";
-	$InfoLink->Link = "info.php";
-	$SignInLink->Link = "signin.php";
-	$SignUpLink->Link = "signup.php";
-	?>
-
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
