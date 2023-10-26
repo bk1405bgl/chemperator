@@ -21,7 +21,7 @@
         </ul>
     </nav>
     <main>
-        <form action="f_signin.php">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="container">
                 <h1>Einloggen</h1>
                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>

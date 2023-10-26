@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c445fed6-31e2-4ddf-9204-2aad23746d27" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
@@ -45,6 +44,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,6 +56,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "ssh.settings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="false">
@@ -71,9 +80,9 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3302696" />
       <window_info anchor="bottom" id="TypeScript" order="5" />
       <window_info anchor="bottom" id="Services" order="6" weight="0.3302696" />
-      <window_info anchor="right" id="Remote Host" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Notifications" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="0" weight="0.32975262" />
+      <window_info anchor="right" id="Database" order="1" weight="0.32975262" />
+      <window_info anchor="right" id="Notifications" order="2" weight="0.2503255" />
       <window_info anchor="right" id="make" order="3" side_tool="true" />
     </layout>
   </component>
@@ -88,7 +97,7 @@
       <workItem from="1683053692039" duration="7302000" />
       <workItem from="1683918808575" duration="117000" />
       <workItem from="1698260878655" duration="586000" />
-      <workItem from="1698300947284" duration="728000" />
+      <workItem from="1698300947284" duration="1734000" />
     </task>
     <servers />
   </component>
