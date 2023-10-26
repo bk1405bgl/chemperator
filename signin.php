@@ -27,7 +27,7 @@
                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
                 <hr>
                 <label for="email">E-Mail</label>
-                <input type="text" placeholder="E-Mail Adresse eingeben" name="email" id="email" required>
+                <input type="email" placeholder="E-Mail Adresse eingeben" name="email" id="email" required>
                 <label for="password">Passwort</label>
                 <input type="password" placeholder="Passwort eingeben" name="password" id="password" required>
                 <button type="submit">Einloggen</button>
