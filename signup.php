@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chemperator</title>
+    <title>Registrieren</title>
     <meta name="description" content="Chemperator ERP System for chemical industry businesses">
     <meta name="author" content="Bilal Kuzey">
     <meta name="viewport" content="width=device-width, initial-scale=1">
