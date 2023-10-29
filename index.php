@@ -26,7 +26,7 @@
         </main>
         <footer>
             <div>
-                <p>Chemperator &copy;<?= date("Y");?></p>
+                <p>Chemperators &copy;<?= date("Y");?></p>
             </div>
         </footer>
     </div>
