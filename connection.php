@@ -1,15 +1,9 @@
 <?php
-define('DB_HOST','localhost');
-define('DB_USER','bilal');
-define('DB_PASS','rassenperri');
-define('DB_NAME','chemperator');
-// Establish database connection.
-try
-{
-    $dbconnection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
-}
-catch (PDOException $e)
-{
-    exit("Error: " . $e->getMessage());
-}
-?>
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    try {
+    $mysqli = new mysqli("localhost", "bilal", "rassenperri", "chemperator");
+    $mysqli->set_charset("utf8mb4");
+    } catch(Exception $e) {
+    error_log($e->getMessage());
+    exit('Es konnte keine Verbindung zur Datenbank hergestellt werden.');
+    }

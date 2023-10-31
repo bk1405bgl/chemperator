@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="PS-232.10072.32">
-    <data-source name="@localhost" uuid="26437187-fdfb-40c5-8b7e-fac6d70a958a">
-      <database-info product="MariaDB" version="10.6.12-MariaDB-0ubuntu0.22.04.1" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.0.7" dbms="MARIADB" exact-version="10.6.12" exact-driver-version="3.0">
+    <data-source name="85.105.73.93" uuid="26437187-fdfb-40c5-8b7e-fac6d70a958a">
+      <database-info product="MariaDB" version="10.6.12-MariaDB-0ubuntu0.22.04.1" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.0.7" dbms="MARIADB" exact-version="10.6.12">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -14,6 +14,10 @@
           <node kind="schema" qname="chemperator" />
         </introspection-scope>
       </schema-mapping>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <ssh-config-id>4fa99e81-9c77-4d9e-95b9-9b377f11232d</ssh-config-id>
+      </ssh-properties>
     </data-source>
   </component>
 </project>

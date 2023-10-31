@@ -1,3 +1,6 @@
+<?php
+    include_once "config/app.php";
+?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -7,8 +10,8 @@
     <meta name="description" content="Chemperator ERP System for chemical industry businesses">
     <meta name="author" content="Bilal Kuzey">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -27,12 +30,13 @@
                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
                 <hr>
                 <label for="email">E-Mail</label>
-                <input type="email" placeholder="E-Mail Adresse eingeben" name="email" id="email" required>
+                <input type="email" placeholder="max@mustermann.de" name="email" id="email" required>
                 <label for="password">Passwort</label>
-                <input type="password" placeholder="Passwort eingeben" name="password" id="password" required>
-                <label for="r_password">Passwort wiederholen</label>
-                <input type="password" placeholder="Passwort wiederholen" name="r_password" id="r_password" required>
-                <button type="submit">Registrieren</button>
+                <input type="password" placeholder="********" name="password" id="password" required>
+                <label for="password_confirmation">Passwort wiederholen</label>
+                <input type="password" placeholder="********" name="password_confirmation" id="password_confirmation" required>
+                <button type="submit" name="register">Registrieren</button>
+                <button type="reset" name="reset">Zurücksetzen</button>
             </div>
         </form>
     </main>
