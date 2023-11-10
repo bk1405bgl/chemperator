@@ -1,6 +1,3 @@
-<?php
-    include_once "config/app.php";
-?>
 <!DOCTYPE html>
 <html lang="de">
 
@@ -24,7 +21,7 @@
         </ul>
     </nav>
     <main>
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <form action="includes/signup.inc.php" method="post">
             <div class="container">
                 <h1>Registrieren</h1>
                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>

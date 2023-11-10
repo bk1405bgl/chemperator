@@ -3,19 +3,23 @@ body {
     font-family: sans-serif;
 }
 nav {
-    text-align: right;
+    text-align: center;
 }
-a:link, a:visited {
+a:link, a:visited, button[type=button] {
     text-decoration: none;
     background-color: red;
     color: white;
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin: 5px;
 }
-a:hover, a:active {
+a:hover, a:active, button[type=button]:hover, button[type=button]:active {
     text-decoration: underline;
     background-color: green;
+    margin: 5px;
 }
 ul {
     list-style-type: none;
@@ -31,7 +35,7 @@ main {
 	margin: 0 10% 0 10%;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=text] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -42,4 +46,10 @@ input[type=text], input[type=email], input[type=password] {
 
 footer {
     text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+    nav {
+        text-align: right;
+    }
 }

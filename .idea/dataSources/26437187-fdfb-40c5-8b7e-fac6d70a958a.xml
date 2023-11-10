@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="85.105.73.93">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.49">
-    <root id="1"/>
+    <root id="1">
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <ServerVersion>10.6.12</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
@@ -1009,6 +1012,8 @@
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="324" parent="1" name="chemperator">
+      <IntrospectionTimestamp>2023-11-08.20:05:23</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-08.18:05:22</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="information_schema">
@@ -1045,39 +1050,74 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="336" parent="335" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <table id="336" parent="324" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="337" parent="335" name="id">
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(10) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="337" parent="335" name="email">
+    <column id="338" parent="335" name="email">
       <DasType>varchar(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="338" parent="335" name="password">
+    <column id="339" parent="335" name="password">
       <DasType>varchar(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="339" parent="335" name="PRIMARY">
+    <index id="340" parent="335" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="340" parent="335" name="email">
+    <index id="341" parent="335" name="email">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="341" parent="335" name="PRIMARY">
+    <key id="342" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="342" parent="335" name="email">
+    <key id="343" parent="335" name="email">
       <UnderlyingIndexName>email</UnderlyingIndexName>
+    </key>
+    <column id="344" parent="336" name="users_id">
+      <AutoIncrement>3</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="345" parent="336" name="users_uid">
+      <DasType>tinytext|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="346" parent="336" name="users_pwd">
+      <DasType>longtext|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="347" parent="336" name="users_email">
+      <DasType>tinytext|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="348" parent="336" name="PRIMARY">
+      <ColNames>users_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="349" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

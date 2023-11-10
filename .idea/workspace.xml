@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50669f8-f627-43c2-b514-5437a676e90e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/DatabaseConnection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/modals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/login-contr.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/login.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/signup-contr.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/signup.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/logout.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/26437187-fdfb-40c5-8b7e-fac6d70a958a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/26437187-fdfb-40c5-8b7e-fac6d70a958a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/DatabaseConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
@@ -25,6 +32,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,12 +65,13 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/chemperator&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;web.server&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -75,7 +91,13 @@
       <workItem from="1698562341583" duration="432000" />
       <workItem from="1698566931659" duration="6748000" />
       <workItem from="1698667091237" duration="8598000" />
-      <workItem from="1698740745873" duration="3485000" />
+      <workItem from="1698740745873" duration="12277000" />
+      <workItem from="1698912012031" duration="13005000" />
+      <workItem from="1699036497183" duration="17089000" />
+      <workItem from="1699259557872" duration="621000" />
+      <workItem from="1699260715574" duration="2806000" />
+      <workItem from="1699464318875" duration="7901000" />
+      <workItem from="1699637052373" duration="2065000" />
     </task>
     <servers />
   </component>
