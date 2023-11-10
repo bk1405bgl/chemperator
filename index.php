@@ -3,7 +3,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="utf-8">
     <title>Chemperator</title>
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/modal.css">
 </head>
-
 <body>
     <div>
         <nav>
@@ -36,7 +34,6 @@
         <main>
             <h1>Chemperator</h1>
             <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.</p>
-
             <div id="modal1" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -61,8 +58,6 @@
                     </form>
                 </div>
             </div>
-
-            <!-- Modal 2 -->
             <div id="modal2" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal2')">&times;</span>
@@ -72,8 +67,8 @@
                                 <legend>Einloggen</legend>
                                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
                                 <hr>
-                                <label>E-Mail / Username</label>
-                                <input type="text" placeholder="E-Mail Adresse oder Username eingeben" name="uid" required>
+                                <label>Username</label>
+                                <input type="text" placeholder="Username eingeben" name="uid" required>
                                 <label>Passwort</label>
                                 <input type="password" placeholder="Passwort eingeben" name="pwd" required>
                                 <button type="submit" name="submit">Einloggen</button>
@@ -92,5 +87,4 @@
     </div>
     <script src="assets/js/modals.js"></script>
 </body>
-
 </html>

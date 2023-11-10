@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50669f8-f627-43c2-b514-5437a676e90e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/login-contr.classes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/login.classes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/signup-contr.classes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/signup.classes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/login.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/logout.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26437187-fdfb-40c5-8b7e-fac6d70a958a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/26437187-fdfb-40c5-8b7e-fac6d70a958a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/DatabaseConnection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/signin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +80,7 @@
       <workItem from="1699259557872" duration="621000" />
       <workItem from="1699260715574" duration="2806000" />
       <workItem from="1699464318875" duration="7901000" />
-      <workItem from="1699637052373" duration="2065000" />
+      <workItem from="1699637052373" duration="3006000" />
     </task>
     <servers />
   </component>
