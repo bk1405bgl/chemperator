@@ -3,7 +3,7 @@ create one more file in /classes/ folder with name:
 dbh.classes.php
 
 file content:
-
+```
 <?php
 class Dbh
 {
@@ -19,7 +19,9 @@ class Dbh
         }
     }
 }
-
+```
 on line 6 add your username
 on line 7 add your password
 on line 8 add your host and your database name
+
+also don't forget to remove the curly brackets.
