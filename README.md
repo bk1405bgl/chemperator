@@ -1,8 +1,28 @@
+# Chemperator
 
-create one more file in /classes/ folder with name: 
+## Anleitung
+
+### Erstellen Sie eine Datenbank:
+
+`CREATE DATABASE chemperator;`
+Wahlweise kann die Datenbank anders benannt werden, dann sollte der Wert an der jeweiligen Stelle angepasst werden. Siehe weiter unten...
+
+```
+CREATE TABLE users (
+    users_id int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    users_uid TINYTEXT NOT NULL,
+    users_pwd LONGTEXT NOT NULL,
+    users_email TINYTEXT NOT NULL
+);
+```
+Auch hier kann die Tabelle in der Datenbank anders benannt werden. Dafür müssen die SQL Abfragen angepasst werden.
+
+### Eine weitere Datei erstellen
+
+Erstellen Sie im Ordner /classes/ eine weitere Datei mit dem Namen: 
 dbh.classes.php
 
-file content:
+Dateiinhalt:
 ```
 <?php
 class Dbh
@@ -20,8 +40,10 @@ class Dbh
     }
 }
 ```
-on line 6 add your username
-on line 7 add your password
-on line 8 add your host and your database name
+In Zeile 6 username durch Ihren ersetzen.
 
-also don't forget to remove the curly brackets.
+In Zeile 7 password durch Ihres ersetzen.
+
+In Zeile 8 host und Datenbankname ersetzen, so wie es in Ihrem System ist.
+
+Und bitte entfernen Sie auch die geschweiften Klammern. Danke.
