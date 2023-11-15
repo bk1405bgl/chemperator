@@ -5,6 +5,7 @@
 ### Erstellen Sie eine Datenbank:
 
 `CREATE DATABASE chemperator;`
+
 Wahlweise kann die Datenbank anders benannt werden, dann sollte der Wert an der jeweiligen Stelle angepasst werden. Siehe weiter unten...
 
 ```
