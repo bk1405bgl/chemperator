@@ -3,8 +3,8 @@ class Dbh
 {
     protected function connect() {
         try {
-            $username = "bilal";
-            $password = "rassenperri";
+            $username = "bilalovic";
+            $password = "Bakara-187";
             $dbh = new PDO('mysql:host=localhost;dbname=chemperator', $username, $password);
             return $dbh;
         } catch(PDOException $e) {

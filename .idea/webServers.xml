@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="b62c45da-de97-4a14-b8a4-d0e5d44bbea3" name="he" url="https://chemperator.bk1405bgl.de">
+        <fileTransfer rootFolder="/home/vx1g3m3u5e81/public_html/chemperator" accessType="SFTP" host="bk1405bgl.de" port="22" sshConfigId="cf47a54a-b6c8-4f90-b173-84372148861d" sshConfig="vx1g3m3u5e81@bk1405bgl.de:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
