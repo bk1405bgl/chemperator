@@ -13,6 +13,7 @@ a:link, a:visited, button[type=button] {
     text-align: center;
     display: inline-block;
     border-radius: 10px;
+    border: none;
     text-transform: capitalize;
     margin: 5px;
 }

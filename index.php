@@ -35,7 +35,7 @@ session_start();
             <h1>Chemperator</h1>
             <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.
             <div class="blurr">
-                <img src="assets/images/dashboard.webp" alt="Dashboard" name="Einloggen">
+                <img src="assets/images/dashboard.webp" alt="Dashboard">
             </div>
             <div id="modal1" class="modal">
                 <div class="modal-content">
