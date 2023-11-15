@@ -6,7 +6,7 @@
         include "../classes/dbh.classes.php";
         include "../classes/login.classes.php";
         include "../classes/login-contr.classes.php";
-        $login = new LoginContr($uid, $pwd);
+        $login = new loginContr($uid, $pwd);
 
         $login->loginUser();
 

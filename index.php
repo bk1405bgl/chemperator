@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -14,26 +14,29 @@
     <link rel="stylesheet" href="assets/css/modal.css">
 </head>
 <body>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <?php
-                    if(isset($_SESSION["user_id"])) {
+<div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <?php
+            if(isset($_SESSION["userid"])) {
                 ?>
-                <li><a href="#"><?php echo $_SESSION["user_uid"]; ?></a></li>
+                <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
                 <li><a href="includes/logout.inc.php">Logout</a></li>
                 <?php
-                    } else {
-                        ?>
-                        <li><button type="button" onclick="openModal('modal1')">Registrieren</button></li>
-                        <li><button type="button" onclick="openModal('modal2')">Einloggen</button></li>
-                <?php } ?>
-            </ul>
-        </nav>
+            } else {
+                ?>
+                <li><button type="button" onclick="openModal('modal1')">Registrieren</button></li>
+                <li><button type="button" onclick="openModal('modal2')">Einloggen</button></li>
+            <?php } ?>
+        </ul>
+    </nav>
         <main>
             <h1>Chemperator</h1>
-            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.</p>
+            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.
+            <div class="blurr">
+                <img src="assets/images/dashboard.webp" alt="Dashboard" name="Einloggen">
+            </div>
             <div id="modal1" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>

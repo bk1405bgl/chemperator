@@ -35,6 +35,14 @@ main {
 	margin: 0 10% 0 10%;
 }
 
+.blurr {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+}
+
 input[type=text], input[type=email], input[type=password], input[type=text] {
     width: 100%;
     padding: 15px;

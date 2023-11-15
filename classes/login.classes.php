@@ -1,11 +1,11 @@
 <?php
 
-    class login extends Dbh
-    {
-        protected function getUser($uid, $pwd)
-        {
+    class Login extends Dbh {
+
+        protected function getUser($uid, $pwd) {
             $stmt = $this->connect()->prepare('SELECT users_pwd FROM users WHERE users_uid = ? OR users_email = ?;');
-            if(!$stmt->execute(array($uid, $pwd))) {
+
+            if(!$stmt->execute(array($uid, $uid))) {
                 $stmt = null;
                 header("Location: ../index.php?error=stmtfailed");
                 exit();
@@ -21,9 +21,9 @@
                 $stmt = null;
                 header("Location: ../index.php?error=wrongpassword");
                 exit();
-            } else if($checkPwd == true) {
-                $stmt = $this->connect()->prepare('SELECT * FROM users WHERE users_uid = ? OR users_email = ? AND users_pwd = ?;');
-                if(!$stmt->execute(array($uid, $uid, $pwd))) {
+            } elseif($checkPwd == true) {
+                $stmt = $this->connect()->prepare('SELECT * FROM users WHERE users_uid = ? OR users_email = ?;');
+                if(!$stmt->execute(array($uid, $uid))) {
                     $stmt = null;
                     header("Location: ../index.php?error=stmtfailed");
                     exit();
@@ -35,10 +35,10 @@
                 }
                 $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 session_start();
-                $_SESSION["user_id"] = $user[0]["users_id"];
-                $_SESSION["user_uid"] = $user[0]["users_uid"];
-
+                $_SESSION["userid"] = $user[0]["users_id"];
+                $_SESSION["useruid"] = $user[0]["users_uid"];
+                $stmt = null;
             }
-            $stmt = null;
+
         }
     }
