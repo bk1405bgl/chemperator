@@ -53,6 +53,36 @@ input[type=text], input[type=email], input[type=password], input[type=text] {
     background: #f1f1f1;
 }
 
+.error-message {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 7px;
+    background-color: #cd5c5c;
+    color: #ff0000;
+    -webkit-animation: fadeinout 7s linear 1 forwards;
+    animation: fadeinout 7s linear 1 forwards;
+}
+
+.success-message {
+    -webkit-animation: fadeinout 8s linear 1 forwards;
+    animation: fadeinout 8s linear 1 forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 footer {
     text-align: center;
 }

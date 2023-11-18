@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -17,6 +17,26 @@ session_start();
 <div>
     <nav>
         <ul>
+            <?php
+            if(isset($_GET["error"])) {
+                $error = $_GET["error"];
+                if ($error == "emptyinput") {
+                    echo '<p class="error-message">Bitte füllen Sie alle Felder aus.</p>';
+                } elseif ($error == "wrongpassword") {
+                    echo '<p class="error-message">Falsches Passwort. Bitte versuchen Sie es erneut.</p>';
+                } elseif ($error == "usernotfound") {
+                    echo '<p class="error-message">Benutzer nicht gefunden. Überprüfen Sie Ihre Anmeldeinformationen.</p>';
+                } elseif ($error == "stmtfailed") {
+                    echo '<p class="error-message">Es gab ein Problem mit der Datenbank. Bitte versuchen Sie es später erneut.</p>';
+                } elseif ($error == "accountnotactivated") {
+                    echo '<p class="error-message">Ihr Konto wurde noch nicht aktiviert. Bitte versuchen Sie es später erneut.</p>';
+                } elseif ($error == "none") {
+                    echo '<p class="success-message">Sie haben sich erfolgreich eingeloggt.</p>';
+                } elseif ($error == "registered") {
+                    echo '<p class="success-message">Sie haben sich erfolgreich registriert. Bitte warten Sie, bis Ihr Account freigeschaltet wird!</p>';
+                }
+            }
+            ?>
             <li><a href="/">Home</a></li>
             <?php
             if(isset($_SESSION["userid"])) {
@@ -33,7 +53,7 @@ session_start();
     </nav>
         <main>
             <h1>Chemperator</h1>
-            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.
+            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.</p>
             <div class="blurr">
                 <img src="assets/images/dashboard.webp" alt="Dashboard">
             </div>
@@ -70,8 +90,8 @@ session_start();
                                 <legend>Einloggen</legend>
                                 <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
                                 <hr>
-                                <label>Username</label>
-                                <input type="text" placeholder="Username eingeben" name="uid" required>
+                                <label>Username oder E-Mail Adresse</label>
+                                <input type="text" placeholder="Username / E-Mail Adresse eingeben" name="uid" required>
                                 <label>Passwort</label>
                                 <input type="password" placeholder="Passwort eingeben" name="pwd" required>
                                 <button type="submit" name="submit">Einloggen</button>

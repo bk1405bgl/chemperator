@@ -12,5 +12,5 @@
 
         $signup->signupUser();
 
-        header("Location: ../index.php?error=none");
+        header("Location: ../index.php?error=registered");
     }
