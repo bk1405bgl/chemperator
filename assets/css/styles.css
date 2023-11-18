@@ -59,28 +59,59 @@ input[type=text], input[type=email], input[type=password], input[type=text] {
     right: 20px;
     overflow: hidden;
     padding: 1rem 2rem;
-    border: none;
     border-radius: 7px;
-    background-color: #cd5c5c;
-    color: #ff0000;
-    -webkit-animation: fadeinout 7s linear 1 forwards;
-    animation: fadeinout 7s linear 1 forwards;
+    border-color: #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+    -webkit-animation: fadeinout 5s linear 1 forwards;
+    animation: fadeinout 5s linear 1 forwards;
 }
 
 .success-message {
-    -webkit-animation: fadeinout 8s linear 1 forwards;
-    animation: fadeinout 8s linear 1 forwards;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    border-color: #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+    -webkit-animation: fadeinout 5s linear 1 forwards;
+    animation: fadeinout 5s linear 1 forwards;
 }
 
 @-webkit-keyframes fadeinout {
     0% { opacity: 0; }
-    50% { opacity: 1; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
     100% { opacity: 0; }
 }
+
+.error-message::before,
+.success-message::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: progress 5s linear forwards;
+}
+
 @keyframes fadeinout {
     0% { opacity: 0; }
-    50% { opacity: 1; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+@keyframes progress {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
 }
 
 footer {
