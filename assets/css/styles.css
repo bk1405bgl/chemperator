@@ -9,7 +9,7 @@ a:link, a:visited, button[type=button] {
     text-decoration: none;
     background-color: red;
     color: white;
-    padding: 14px 25px;
+    padding: 10px 20px;
     text-align: center;
     display: inline-block;
     border-radius: 10px;
@@ -55,7 +55,7 @@ input[type=text], input[type=email], input[type=password], input[type=text] {
 
 .error-message {
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 20px;
     overflow: hidden;
     padding: 1rem 2rem;
@@ -69,7 +69,7 @@ input[type=text], input[type=email], input[type=password], input[type=text] {
 
 .success-message {
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 20px;
     overflow: hidden;
     padding: 1rem 2rem;
@@ -118,8 +118,20 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     nav {
-        text-align: right;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .error-message,
+    .success-message {
+        top: auto;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 }
