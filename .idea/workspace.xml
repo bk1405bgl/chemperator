@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50669f8-f627-43c2-b514-5437a676e90e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/userpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f/storage_v2/_src_/schema/chemperator.hq-uYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f/storage_v2/_src_/schema/chemperator.hq-uYw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/dbh.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +114,9 @@
       <workItem from="1700245619031" duration="13383000" />
       <workItem from="1700330732340" duration="467000" />
       <workItem from="1700331241707" duration="4414000" />
-      <workItem from="1700383209608" duration="3359000" />
+      <workItem from="1700383209608" duration="3445000" />
+      <workItem from="1700472269823" duration="3103000" />
+      <workItem from="1700490594106" duration="237000" />
     </task>
     <servers />
   </component>
