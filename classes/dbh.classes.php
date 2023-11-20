@@ -14,4 +14,8 @@ class Dbh
             die();
         }
     }
+
+    public function getDbConnection() {
+        return $this->connect();
+    }
 }

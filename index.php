@@ -1,5 +1,7 @@
 <?php
     session_start();
+    error_reporting(E_ALL);
+    ini_set('display_errors', true);
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -21,7 +23,7 @@
             <?php
             if(isset($_SESSION["userid"])) {
                 ?>
-                <li><a href="#"><?php echo $_SESSION["useruid"]; ?></a></li>
+                <li><a href="pages/userpage.php"><?php echo $_SESSION["useruid"]; ?></a></li>
                 <li><a href="includes/logout.inc.php">Logout</a></li>
                 <?php
             } else {
