@@ -1,38 +1,10 @@
 <?php
     session_start();
-    error_reporting(E_ALL);
-    ini_set('display_errors', true);
 ?>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="utf-8">
+<?php include 'includes/00.inc.php'; ?>
     <title>Chemperator</title>
-    <meta name="description" content="Chemperator ERP System for chemical industry businesses">
-    <meta name="author" content="Bilal Kuzey">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-</head>
-<body>
-<div>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <?php
-            if(isset($_SESSION["userid"])) {
-                ?>
-                <li><a href="pages/userpage.php"><?php echo $_SESSION["useruid"]; ?></a></li>
-                <li><a href="includes/logout.inc.php">Logout</a></li>
-                <?php
-            } else {
-                ?>
-                <li><button type="button" onclick="openModal('modal1')">Registrieren</button></li>
-                <li><button type="button" onclick="openModal('modal2')">Einloggen</button></li>
-            <?php } ?>
-        </ul>
-    </nav>
+<?php include 'includes/01.inc.php'; ?>
+<?php include 'includes/02.inc.php'; ?>
     <?php
         if(isset($_GET["error"])) {
             $error = $_GET["error"];
@@ -48,6 +20,8 @@
                 echo '<p class="error-message">Ihr Konto wurde noch nicht aktiviert. Bitte versuchen Sie es später erneut.</p>';
             } elseif ($error == "none") {
                 echo '<p class="success-message">Sie haben sich erfolgreich eingeloggt.</p>';
+            } elseif ($error == "notloggedin") {
+                echo '<p class="error-message">Sie sind nicht eingeloggt.</p>';
             } elseif ($error == "registered") {
                 echo '<p class="success-message">Sie haben sich erfolgreich registriert. Bitte warten Sie, bis Ihr Account freigeschaltet wird!</p>';
             }
@@ -104,12 +78,4 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <div>
-                <p>Chemperator &copy;<?= date("Y");?></p>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/js/modals.js"></script>
-</body>
-</html>
+<?php include 'includes/99.inc.php'; ?>

@@ -1,12 +1,11 @@
 <?php
-include_once("../config.php");
-
+require_once(__DIR__ . "/../config.php");
 class Dbh
 {
     protected function connect() {
-        global $dbHost, $dbName, $dbUsername, $dbPassword;
         try {
-            $dbh = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUsername, $dbPassword);
+            global $dbHost, $dbName, $dbUsername, $dbPassword;
+            $dbh = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8", $dbUsername, $dbPassword);
             $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $dbh;
         } catch(PDOException $e) {
