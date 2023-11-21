@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50669f8-f627-43c2-b514-5437a676e90e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/tables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/00.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/01.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/02.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/99.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userpage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/dbh.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/userpage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/tables.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/tables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +113,8 @@
       <workItem from="1700331241707" duration="4414000" />
       <workItem from="1700383209608" duration="3445000" />
       <workItem from="1700472269823" duration="3103000" />
-      <workItem from="1700490594106" duration="10054000" />
+      <workItem from="1700490594106" duration="10150000" />
+      <workItem from="1700546393099" duration="4681000" />
     </task>
     <servers />
   </component>
