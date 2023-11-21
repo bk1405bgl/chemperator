@@ -25,31 +25,32 @@ if (!isset($_SESSION["userid"])) {
     $produkte = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <h1>Produkte</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Kurzbeschreibung</th>
-            <th>Kategorie</th>
-            <th>Steuerklasse</th>
-            <th>Nettopreis</th>
-            <th>Bruttopreis</th>
-            <th>Bestand</th>
-            <th>Bewertungen</th>
-            <th>Aktionen</th>
-        </tr>
-
+    <table role="table">
+        <thead role="rowgroup">
+            <tr role="row">
+                <th role="columnheader">Name</th>
+                <th role="columnheader">Kurzbeschreibung</th>
+                <th role="columnheader">Kategorie</th>
+                <th role="columnheader">Steuerklasse</th>
+                <th role="columnheader">Nettopreis</th>
+                <th role="columnheader">Bruttopreis</th>
+                <th role="columnheader">Bestand</th>
+                <th role="columnheader">Bewertungen</th>
+                <th role="columnheader">Aktionen</th>
+            </tr>
+        </thead>
     <?php foreach ($produkte as $produkt): ?>
 
-        <tr>
-            <td><?= $produkt['product_name']; ?></td>
-            <td><?= $produkt['product_shortD']; ?></td>
-            <td><?= $produkt['product_catId']; ?></td>
-            <td><?= $produkt['product_taxId']; ?></td>
-            <td><?= $produkt['product_priceN']; ?></td>
-            <td><?= $produkt['product_priceB']; ?></td>
-            <td><?= $produkt['product_stock']; ?></td>
-            <td><?= $produkt['product_reviews']; ?></td>
-            <td>Bearbeiten</td>
+        <tr role="row">
+            <td role="cell"><?= $produkt['product_name']; ?></td>
+            <td role="cell"><?= $produkt['product_shortD']; ?></td>
+            <td role="cell"><?= $produkt['product_catId']; ?></td>
+            <td role="cell"><?= $produkt['product_taxId']; ?></td>
+            <td role="cell"><?= $produkt['product_priceN']; ?></td>
+            <td role="cell"><?= $produkt['product_priceB']; ?></td>
+            <td role="cell"><?= $produkt['product_stock']; ?></td>
+            <td role="cell"><?= $produkt['product_reviews']; ?></td>
+            <td role="cell">Bearbeiten</td>
         </tr>
     <?php endforeach; ?>
     </table>
