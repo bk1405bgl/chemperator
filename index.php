@@ -40,44 +40,34 @@
             <p>Rechnungen, Gutschriften, Lieferscheine, uvm. können hier verwaltet werden. Statistiken und Auswertungen können in beliebigen Konstellationen erstellt werden.</p>
             <div id="modal1" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal1')">&times;</span>
-                    <form action="includes/signup.inc.php" method="post">
+                    <span class="close" onclick="closeModal('modal1')"><i class="fa-solid fa-circle-xmark"></i></span>
+                    <form action="includes/signup.inc.php" method="post" autocomplete="off">
                         <div class="container">
-                            <fieldset name="register" form="register">
-                                <legend>Registrieren</legend>
-                                <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
-                                <hr>
-                                <label>Username</label>
-                                <input type="text" placeholder="username" name="uid">
-                                <label>Passwort</label>
-                                <input type="password" placeholder="********" name="pwd" required>
-                                <label>Passwort wiederholen</label>
-                                <input type="password" placeholder="********" name="pwd_repeat" required>
-                                <label>E-Mail</label>
-                                <input type="email" placeholder="max@mustermann.de" name="email" required>
-                                <button type="submit" name="submit">Registrieren</button>
-                                <button type="reset" name="reset">Zurücksetzen</button>
-                            </fieldset>
+                            <label>Username</label>
+                            <input type="text" placeholder="username" name="uid">
+                            <label>Passwort</label>
+                            <input type="password" placeholder="********" name="pwd" required>
+                            <label>Passwort wiederholen</label>
+                            <input type="password" placeholder="********" name="pwd_repeat" required>
+                            <label>E-Mail</label>
+                            <input type="email" placeholder="max@mustermann.de" name="email" required>
+                            <button type="submit" name="submit" title="Registrieren"><i class="fa-solid fa-user-plus">&nbsp;</i>Registrieren</button>
+                            <button type="reset" name="reset" title="Zurücksetzen"><i class="fa-solid fa-delete-left"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
             <div id="modal2" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                    <form action="includes/login.inc.php" method="post">
+                    <span class="close" onclick="closeModal('modal2')"><i class="fa-solid fa-circle-xmark"></i></span>
+                    <form action="includes/login.inc.php" method="post" autocomplete="off">
                         <div class="container">
-                            <fieldset name="login" form="login">
-                                <legend>Einloggen</legend>
-                                <p>Bitte füllen Sie die untenstehenden Felder aus.</p>
-                                <hr>
-                                <label>Username oder E-Mail Adresse</label>
-                                <input type="text" placeholder="Username / E-Mail Adresse eingeben" name="uid" required>
-                                <label>Passwort</label>
-                                <input type="password" placeholder="Passwort eingeben" name="pwd" required>
-                                <button type="submit" name="submit">Einloggen</button>
-                                <button type="reset" name="reset">Zurücksetzen</button>
-                            </fieldset>
+                            <label>Username oder E-Mail Adresse</label>
+                            <input type="text" placeholder="Username / E-Mail Adresse eingeben" name="uid" required>
+                            <label>Passwort</label>
+                            <input type="password" placeholder="Passwort eingeben" name="pwd" required>
+                            <button type="submit" name="submit" title="Einloggen"><i class="fa-solid fa-right-to-bracket">&nbsp;</i>Einloggen</button>
+                            <button type="reset" name="reset" title="Zurücksetzen"><i class="fa-solid fa-delete-left"></i></button>
                         </div>
                     </form>
                 </div>
