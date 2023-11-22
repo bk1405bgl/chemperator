@@ -29,10 +29,15 @@
     ?>
         <main>
             <h1>Chemperator</h1>
-            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche.</p>
-            <div class="blurr">
-                <img src="assets/images/dashboard.webp" alt="Dashboard">
-            </div>
+            <p>Chemperator ist eine ERP-Software, speziell für Firmen in der Chemiebranche entwickelt.</p>
+            <h2>Kundenverwaltung</h2>
+            <p>Verwalten Sie Ihre Kunden und ziehen Sie Schlüsse aus Statistiken und Auswertungen. Bestimmen Sie Top-Kunden, gewähren Sie individuelle Rabatte und vieles mehr.</p>
+            <h2>Artikelverwaltung</h2>
+            <p>Artikel Auflistung, Detailbearbeitung, Preiskalkulation inklusiver direkter Abstammung aus den Rezepturen.</p>
+            <h2>Rezepturverwaltung</h2>
+            <p>Rezepturen bestehen aus Rohstoffen und können mehreren Produkten zugewiesen werden. Eine Rezeptur kann auch nur verdünnt einem Produkt zugewiesen werden.</p>
+            <h2>Auftragsverwaltung</h2>
+            <p>Rechnungen, Gutschriften, Lieferscheine, uvm. können hier verwaltet werden. Statistiken und Auswertungen können in beliebigen Konstellationen erstellt werden.</p>
             <div id="modal1" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
