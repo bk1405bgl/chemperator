@@ -6,7 +6,7 @@
 
 `CREATE DATABASE chemperator;`
 
-Wahlweise kann die Datenbank anders benannt werden, dann sollte der Wert an der jeweiligen Stelle angepasst werden. Siehe weiter unten...
+Wahlweise kann die Datenbank anders benannt werden, dann sollte der Wert an den jeweiligen Stellen angepasst werden. Wo das genau im Code ist, könnt Ihr anhand einer guten IDE (ich empfehle [PHPStorm](https://www.jetbrains.com/phpstorm/)) durch die Suchfunktion herausfinden.
 
 ```
 CREATE TABLE users (
@@ -25,10 +25,11 @@ Erstellen Sie im root Verzeichnis eine config.php Datei mit folgendem Inhalt:
 
 ```
 <?php
-// config.php
 
 $dbUsername = "IhrBenutzername";
 $dbPassword = "IhrPasswort";
 $dbHost = "localhost";
 $dbName = "IhreDatenbank";
 ```
+
+Die Werte solltet Ihr an Eure Umgebung anpassen.
