@@ -28,28 +28,26 @@ if (!isset($_SESSION["userid"])) {
     <table role="table">
         <thead role="rowgroup">
             <tr role="row">
-                <th role="columnheader">Name</th>
+                <th role="columnheader">SKU</th>
+                <th role="columnheader">Artikel</th>
                 <th role="columnheader">Kurzbeschreibung</th>
-                <th role="columnheader">Kategorie</th>
-                <th role="columnheader">Steuerklasse</th>
+                <th role="columnheader">Beschreibung</th>
                 <th role="columnheader">Nettopreis</th>
                 <th role="columnheader">Bruttopreis</th>
-                <th role="columnheader">Bestand</th>
-                <th role="columnheader">Bewertungen</th>
+                <th role="columnheader">Steuerklasse</th>
                 <th role="columnheader">Aktionen</th>
             </tr>
         </thead>
     <?php foreach ($produkte as $produkt): ?>
 
         <tr role="row">
-            <td role="cell"><?= $produkt['product_name']; ?></td>
-            <td role="cell"><?= $produkt['product_shortD']; ?></td>
-            <td role="cell"><?= $produkt['product_catId']; ?></td>
-            <td role="cell"><?= $produkt['product_taxId']; ?></td>
-            <td role="cell"><?= $produkt['product_priceN']; ?></td>
-            <td role="cell"><?= $produkt['product_priceB']; ?></td>
-            <td role="cell"><?= $produkt['product_stock']; ?></td>
-            <td role="cell"><?= $produkt['product_reviews']; ?></td>
+            <td role="cell"><?= $produkt['Artikelnummer']; ?></td>
+            <td role="cell"><?= $produkt['Name']; ?></td>
+            <td role="cell"><?= $produkt['Kurzbeschreibung']; ?></td>
+            <td role="cell"><?= $produkt['LangeBeschreibung']; ?></td>
+            <td role="cell" class="right"><?= $produkt['Nettopreis'] . ' €'; ?></td>
+            <td role="cell" class="right"><?= round($produkt['Nettopreis']*1.19, 2) . ' €'; ?></td>
+            <td role="cell"><?= $produkt['Steuerklasse']; ?></td>
             <td role="cell">Bearbeiten</td>
         </tr>
     <?php endforeach; ?>
