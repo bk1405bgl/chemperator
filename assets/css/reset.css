@@ -25,3 +25,11 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+:root {
+    --primary-color: #31708E;
+    --secondary-color: #687864;
+    --background-color: #F7F9FB;
+    --middle-color: #5085A5;
+    --light-color: #8FC1E3;
+}

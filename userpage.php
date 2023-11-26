@@ -32,4 +32,5 @@
             <a href="products.php">Hier geht es zu den Produkten!</a>
         </div>
     </div>
+</main>
 <?php include 'includes/99.inc.php'; ?>

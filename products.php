@@ -18,7 +18,7 @@ if (!isset($_SESSION["userid"])) {
     $dbh = new Dbh();
     $conn = $dbh->getDbConnection();
 
-    $sql = "SELECT * FROM artikel";
+    $sql = "SELECT * FROM Artikel";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
@@ -55,4 +55,4 @@ if (!isset($_SESSION["userid"])) {
     <?php endforeach; ?>
     </table>
 </main>
-<?php include 'includes/99.inc.php'; ?>
+<?php include_once 'includes/99.inc.php'; ?>
