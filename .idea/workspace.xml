@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d50669f8-f627-43c2-b514-5437a676e90e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chemperator.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f/storage_v2/_src_/schema/chemperator.hq-uYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8999280a-8ce5-426b-826b-2a975d4a1e0f/storage_v2/_src_/schema/chemperator.hq-uYw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/tables.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/tables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userpage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +127,9 @@
       <workItem from="1700641565764" duration="11446000" />
       <workItem from="1700727106737" duration="1643000" />
       <workItem from="1700760530224" duration="90000" />
-      <workItem from="1700760691593" duration="184000" />
+      <workItem from="1700760691593" duration="2722000" />
+      <workItem from="1700835163122" duration="4112000" />
+      <workItem from="1701026224643" duration="283000" />
     </task>
     <servers />
   </component>
