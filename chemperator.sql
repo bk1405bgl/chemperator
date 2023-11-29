@@ -39,18 +39,6 @@ CREATE TABLE `Artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Daten für Tabelle `Artikel`
---
-
-INSERT INTO `Artikel` (`ArtikelID`, `Name`, `Artikelnummer`, `Kurzbeschreibung`, `LangeBeschreibung`, `Nettopreis`, `Steuerklasse`) VALUES
-(1, 'Reinigungsmittel A', 'A123', 'Effektives Reinigungsmittel', 'Ein Reinigungsmittel, das hartnäckigen Schmutz entfernt.', '19.99', 1),
-(2, 'Reinigungsmittel B', 'B456', 'Sanfte Reinigungsformel', 'Für empfindliche Oberflächen geeignet.', '14.99', 1),
-(3, 'Sprühkopf für Flasche', 'S789', 'Hochwertiger Sprühkopf', 'Zum einfachen Auftragen von Flüssigkeiten.', '5.99', 1),
-(4, 'Flasche für Reinigungsmittel', 'F101', 'Wiederverwendbare Flasche', 'Fassungsvermögen von 500 ml.', '2.99', 1);
-
--- --------------------------------------------------------
-
---
 -- Tabellenstruktur für Tabelle `ArtikelKategorien`
 --
 
@@ -59,20 +47,6 @@ CREATE TABLE `ArtikelKategorien` (
   `ArtikelID` int(11) DEFAULT NULL,
   `KategorieID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Daten für Tabelle `ArtikelKategorien`
---
-
-INSERT INTO `ArtikelKategorien` (`VerknupfungID`, `ArtikelID`, `KategorieID`) VALUES
-(1, 1, 1),
-(2, 1, 2),
-(3, 2, 1),
-(4, 2, 2),
-(5, 3, 3),
-(6, 4, 1);
-
--- --------------------------------------------------------
 
 --
 -- Tabellenstruktur für Tabelle `ArtikelKomponenten`
@@ -84,26 +58,6 @@ CREATE TABLE `ArtikelKomponenten` (
   `KomponentenName` varchar(255) DEFAULT NULL,
   `Gewicht` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Daten für Tabelle `ArtikelKomponenten`
---
-
-INSERT INTO `ArtikelKomponenten` (`KomponentenID`, `ArtikelID`, `KomponentenName`, `Gewicht`) VALUES
-(1, 1, 'Flasche', 200),
-(2, 1, 'Deckel', 50),
-(3, 1, 'Etikett', 10),
-(4, 1, 'Reinigungsmittel A', 300),
-(5, 2, 'Flasche', 150),
-(6, 2, 'Deckel', 50),
-(7, 2, 'Etikett', 10),
-(8, 2, 'Reinigungsmittel B', 200),
-(9, 3, 'Sprühkopf', 30),
-(10, 4, 'Flasche', 200),
-(11, 4, 'Deckel', 50),
-(12, 4, 'Etikett', 10);
-
--- --------------------------------------------------------
 
 --
 -- Tabellenstruktur für Tabelle `Bewertungen`
@@ -140,17 +94,6 @@ CREATE TABLE `Kategorien` (
   `KategorieID` int(11) NOT NULL,
   `Name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Daten für Tabelle `Kategorien`
---
-
-INSERT INTO `Kategorien` (`KategorieID`, `Name`) VALUES
-(1, 'Haushalt'),
-(2, 'Reinigungsmittel'),
-(3, 'Zubehör');
-
--- --------------------------------------------------------
 
 --
 -- Tabellenstruktur für Tabelle `Lagerbestand`
@@ -226,21 +169,6 @@ CREATE TABLE `users` (
   `users_email` tinytext NOT NULL,
   `isActive` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Daten für Tabelle `users`
---
-
-INSERT INTO `users` (`users_id`, `users_uid`, `users_pwd`, `users_email`, `isActive`) VALUES
-(1, 'bilal', '$2y$10$6WNyxgMyozE/AYIrIu4mmuUZuGJbeBMXQQ17DvvPwnrRfYGCeyi5G', 'test@test.com', 0),
-(8, 'hasan', '$2y$10$SQpdw0WnZidQ0K7d4kzVUu7wU2sBBgO0BsZwmfFZiusI1Lxts5NG2', 'hasan@hasan.de', 1),
-(10, 'bums', '$2y$10$rmvXUkekYei5/oKMvaq7zuSTp5zebAAia/WiBr8iCl9PEeQWP32HG', 'bums@bums.de', 1),
-(15, 'iron', '$2y$10$ZGcfRbvsh4CXzUsChj8i4OmGDEXygltuHpRn/yYWtLivfPkHYHjhG', 'iron@iron.de', 1),
-(19, 'peter', '$2y$10$lxxmKFqmqL2MDMMfswLMBufStrjzESE8uiSdg6CWfg2favjAxrbtq', 'peter@peter.de', 1);
-
---
--- Indizes der exportierten Tabellen
---
 
 --
 -- Indizes für die Tabelle `Artikel`
