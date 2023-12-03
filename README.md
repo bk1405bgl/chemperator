@@ -11,3 +11,5 @@ Entweder in der phpMyAdmin Oberfläche manuell eine Datenbank erstellen, dessen 
 Danach, um den Prozess einfach zu halten, erscheint unser Konfigurations-Assistent für das Setzen der globalen Einstellungen der Datenbank (Benutzername, Passwort, Host und Datenbankname). Diese Informationen werden in der Datei `config.php` gespeichert.
 
 Importieren Sie die Datei `chemperator.sql` in Ihre Datenbank.
+
+Bei Rückfragen bitte einfach melden.
