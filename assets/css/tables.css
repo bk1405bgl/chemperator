@@ -16,6 +16,13 @@ tr:nth-child(even){background-color: #f2f2f2;}
 
 tr:hover {background-color: var(--middle-color);}
 
+thead {
+    position: sticky;
+    top: 0;
+    border: 1px solid var(--font-color);
+    background-color: var(--background-color);
+}
+
 th {
     padding-top: 12px;
     padding-bottom: 12px;
