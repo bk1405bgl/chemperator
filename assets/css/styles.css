@@ -17,7 +17,7 @@ nav {
 
 nav > ul > li > a:link, nav > ul > li > a:visited, nav > ul > li > button[type=button] {
     text-decoration: none;
-    background-color: #3500D3;
+    background-color: var(--primary-color);
     color: var(--background-color);
     padding: 10px 20px;
     text-align: center;
@@ -30,7 +30,7 @@ nav > ul > li > a:link, nav > ul > li > a:visited, nav > ul > li > button[type=b
 
 nav > ul > li > a:hover, nav > ul > li > a:active, nav > ul >  li > button[type=button]:hover, nav > ul > li > button[type=button]:active {
     text-decoration: none;
-    background-color: #240090;
+    background-color: var(--secondary-color);
     margin: 5px;
     opacity: 1;
 }

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/* Styling for modals */
 .modal {
     display: none;
     position: fixed;
@@ -13,7 +12,7 @@
 
 .modal-content {
     background-color: #fff;
-    margin: 5% auto; /* Hier wurde der Wert weiter reduziert, um das Modal höher zu positionieren */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -25,8 +24,9 @@
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover, .close:focus {
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
     cursor: pointer;
 }
