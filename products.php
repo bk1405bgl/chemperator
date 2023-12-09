@@ -48,7 +48,19 @@ if (!isset($_SESSION["userid"])) {
             <td role="cell" class="right"><?= $produkt['Nettopreis'] . ' €'; ?></td>
             <td role="cell" class="right"><?= round($produkt['Nettopreis']*1.19, 2) . ' €'; ?></td>
             <td role="cell"><?= $produkt['Steuerklasse']; ?></td>
-            <td role="cell">Bearbeiten</td>
+            <td role="cell">
+                <div>
+                <form action="edit_product.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $produkt['ArtikelID']; ?>">
+                    <button type="submit"><i class="fa-solid fa-pen-to-square"></i></button>
+                </form>
+
+                <form action="delete_product.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $produkt['ArtikelID']; ?>">
+                    <button type="submit" onclick="return confirm('Bist du sicher das du die Daten löschen möchtest?');"><i class="fa-solid fa-trash"></i></button>
+                </form>
+                </div>
+            </td>
         </tr>
     <?php endforeach; ?>
     </table>
