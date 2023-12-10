@@ -12,7 +12,9 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
+tr {
+    background-color: var(--background-color);
+}
 
 tr:hover {background-color: var(--middle-color);}
 
@@ -20,7 +22,7 @@ thead {
     position: sticky;
     top: 0;
     border: 1px solid var(--font-color);
-    background-color: var(--background-color);
+    background-color: var(--font-color);
 }
 
 th {

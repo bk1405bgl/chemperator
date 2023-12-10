@@ -1,12 +1,25 @@
 @charset "UTF-8";
 
+* {
+    padding: 0;
+}
+
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
     font-size: 1em;
     font-family: sans-serif;
     background-image: url("../images/background.jpg");
     background-repeat: repeat-y;
     background-size: cover;
     background-blend-mode: soft-light;
+}
+
+header {
+    background: var(--background-color);
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
@@ -48,15 +61,8 @@ li{
 }
 
 main {
-    flex-grow: 1;
-    height: calc(100vh - 40px);
-	margin: 0 10% 0 10%;
-    background-color: var(--background-color);
-    min-height: 80vh;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px !important;
+    padding: 20px;
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -206,25 +212,12 @@ button[type=reset] {
     0% { transform: scaleX(0); }
     100% { transform: scaleX(1); }
 }
+
 footer {
-    flex-shrink: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 2vh 3vh 5vh; /* oben, rechts/links, unten */
+    background: #424242;
+    padding: 20px;
     text-align: center;
-    color: #3500D3;
-    background-color: var(--background-color);
 }
-/*footer {
-    position: fixed;
-    bottom: 0;
-    min-height: 7vh;
-    text-align: center;
-    padding: 3vh;
-    color: #3500D3;
-    background-color: var(--background-color);
-}*/
 
 @media screen and (max-width: 768px) {
     nav {
