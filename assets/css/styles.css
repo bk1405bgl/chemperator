@@ -10,10 +10,9 @@ body {
     height: 100vh;
     font-size: 1em;
     font-family: sans-serif;
-    background-image: url("../images/background.jpg");
-    background-repeat: repeat-y;
+    background: url("../images/background.jpg") repeat-y, rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
     background-size: cover;
-    background-blend-mode: soft-light;
 }
 
 header {
@@ -63,11 +62,12 @@ li{
 main {
     padding: 20px;
     text-align: justify;
+    margin: 0 5% 0 5%;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    color: #3500D3;
+    color: var(--primary-color);
     line-height: 4rem;
 }
 
