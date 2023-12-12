@@ -25,9 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $LangeBeschreibung = $_POST['LangeBeschreibung'];
     $Nettopreis = $_POST['Nettopreis'];
     $Steuerklasse = $_POST['Steuerklasse'];
-// Sichern und validieren Sie alle anderen Werte...
 
-    $sql = "INSERT INTO Artikel (Name, Artikelnummer, Kurzbeschreibung, LangeBeschreibung, Nettopreis, Steuerklasse) VALUES (:name, :Artikelnummer, :Kurzbeschreibung, :LangeBeschreibung, :Nettopreis, :Steuerklasse)";
+    $sql = "INSERT INTO Artikel (Name, Artikelnummer, Kurzbeschreibung, LangeBeschreibung, Nettopreis, Steuerklasse)
+    VALUES (:name, :Artikelnummer, :Kurzbeschreibung, :LangeBeschreibung, :Nettopreis, :Steuerklasse)";
 $stmt = $conn->prepare($sql);
 
     if ($stmt->execute([
