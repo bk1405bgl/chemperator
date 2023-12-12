@@ -25,6 +25,7 @@ if (!isset($_SESSION["userid"])) {
     $produkte = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <h1>Produkte</h1>
+    <a href="add_product.php" class="btn">Neuen Artikel hinzufügen</a>
     <table role="table">
         <thead role="rowgroup">
             <tr role="row">
