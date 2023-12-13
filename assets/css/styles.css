@@ -120,7 +120,28 @@ button[type=submit] {
 
 button[type=reset] {
     color: #6c757d;
-    background-color: transparent;
+    background-color: var(--background-color);
+    background-image: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #6c757d;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button[type=delete] {
+    color: var(--background-color);
+    background-color: #DC3545;
     background-image: none;
     display: inline-block;
     font-weight: 400;

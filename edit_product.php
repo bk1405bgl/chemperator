@@ -69,7 +69,8 @@ if (isset($_POST["name"]) && isset($product[0])) {
             <input type="number" id="Nettopreis" name="Nettopreis" value="<?php echo $product[0]['Nettopreis']; ?>">
             <label for="Steuerklasse">Steuerklasse:</label>
             <input type="number" id="Steuerklasse" name="Steuerklasse" value="<?php echo $product[0]['Steuerklasse']; ?>">
-            <input type="submit" value="Änderungen speichern">
+            <button type="submit">Änderungen speichern</button>
+            <button onclick="location.href='products.php'" type="reset"><i class="fa-solid fa-backward"></i></button>
         </form>
     </main>
 <?php include_once 'includes/99.inc.php'; ?>

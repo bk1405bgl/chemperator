@@ -25,7 +25,9 @@ if (!isset($_SESSION["userid"])) {
     $produkte = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
     <h1>Produkte</h1>
-    <a href="add_product.php" class="btn">Neuen Artikel hinzufügen</a>
+    <button onclick="location.href='add_product.php'" type="submit">
+        <i class="fa-solid fa-circle-plus"></i>
+    </button>
     <table role="table">
         <thead role="rowgroup">
             <tr role="row">
@@ -42,13 +44,13 @@ if (!isset($_SESSION["userid"])) {
     <?php foreach ($produkte as $produkt): ?>
 
         <tr role="row">
-            <td role="cell"><?= $produkt['Artikelnummer']; ?></td>
+            <td role="cell" class="center"><?= $produkt['Artikelnummer']; ?></td>
             <td role="cell"><?= $produkt['Name']; ?></td>
             <td role="cell"><?= $produkt['Kurzbeschreibung']; ?></td>
             <td role="cell"><?= $produkt['LangeBeschreibung']; ?></td>
-            <td role="cell" class="right"><?= $produkt['Nettopreis'] . ' €'; ?></td>
-            <td role="cell" class="right"><?= round($produkt['Nettopreis']*1.19, 2) . ' €'; ?></td>
-            <td role="cell"><?= $produkt['Steuerklasse']; ?></td>
+            <td role="cell" class="right"><?= number_format($produkt['Nettopreis'], 2, ',', ' ') . ' €'; ?></td>
+            <td role="cell" class="right"><?= number_format($produkt['Nettopreis']*1.19, 2, ',', ' ') . ' €'; ?></td>
+            <td role="cell" class="center"><?= $produkt['Steuerklasse']; ?></td>
             <td role="cell">
                 <div>
                 <form action="edit_product.php" method="post">
@@ -58,7 +60,7 @@ if (!isset($_SESSION["userid"])) {
 
                 <form action="delete_product.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $produkt['ArtikelID']; ?>">
-                    <button type="submit" onclick="return confirm('Bist du sicher das du die Daten löschen möchtest?');"><i class="fa-solid fa-trash"></i></button>
+                    <button type="delete" onclick="return confirm('Bist du sicher das du die Daten löschen möchtest?');"><i class="fa-solid fa-trash"></i></button>
                 </form>
                 </div>
             </td>

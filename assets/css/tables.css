@@ -12,6 +12,14 @@ td, th {
     padding: 8px;
 }
 
+td.right {
+    text-align: right;
+}
+
+td.center {
+    text-align: center;
+}
+
 tr {
     background-color: var(--background-color);
 }
