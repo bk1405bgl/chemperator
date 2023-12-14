@@ -42,18 +42,16 @@
             <div class="modal-content">
                 <span class="close" onclick="closeModal('modal1')"><i class="fa-solid fa-circle-xmark"></i></span>
                 <form action="includes/signup.inc.php" method="post" autocomplete="off">
-                    <div class="container">
-                        <label>Username</label>
-                        <input type="text" placeholder="username" name="uid">
-                        <label>Passwort</label>
-                        <input type="password" placeholder="********" name="pwd" required>
-                        <label>Passwort wiederholen</label>
-                        <input type="password" placeholder="********" name="pwd_repeat" required>
-                        <label>E-Mail</label>
-                        <input type="email" placeholder="max@mustermann.de" name="email" required>
-                        <button type="submit" name="submit" title="Registrieren"><i class="fa-solid fa-user-plus">&nbsp;</i>Registrieren</button>
-                        <button type="reset" name="reset" title="Zurücksetzen"><i class="fa-solid fa-delete-left"></i></button>
-                    </div>
+                    <label>Benutzername</label>
+                    <input type="text" placeholder="username" name="uid">
+                    <label>Passwort</label>
+                    <input type="password" placeholder="********" name="pwd" required>
+                    <label>Passwort wiederholen</label>
+                    <input type="password" placeholder="********" name="pwd_repeat" required>
+                    <label>E-Mail</label>
+                    <input type="email" placeholder="max@mustermann.de" name="email" required>
+                    <button type="submit" name="submit" title="Registrieren"><i class="fa-solid fa-user-plus">&nbsp;</i>Registrieren</button>
+                    <button type="reset" name="reset" title="Zurücksetzen"><i class="fa-solid fa-delete-left"></i></button>
                 </form>
             </div>
         </div>
@@ -62,7 +60,7 @@
                 <span class="close" onclick="closeModal('modal2')"><i class="fa-solid fa-circle-xmark"></i></span>
                 <form action="includes/login.inc.php" method="post" autocomplete="off">
                     <div class="container">
-                        <label>Username oder E-Mail Adresse</label>
+                        <label>Benutzername oder E-Mail Adresse</label>
                         <input type="text" placeholder="Username / E-Mail Adresse eingeben" name="uid" required>
                         <label>Passwort</label>
                         <input type="password" placeholder="Passwort eingeben" name="pwd" required>

@@ -11,15 +11,15 @@
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: var(--background-color);
     margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--light-color);
     width: 80%;
 }
 
 .close {
-    color: #aaa;
+    color: var(--light-color);
     float: right;
     font-size: 28px;
     font-weight: bold;

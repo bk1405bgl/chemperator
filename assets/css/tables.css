@@ -41,7 +41,7 @@ th {
     color: var(--background-color);
 }
 
-form {
+td form {
     display: inline-block;
 }
 

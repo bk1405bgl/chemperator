@@ -52,7 +52,6 @@ if (!isset($_SESSION["userid"])) {
             <td role="cell" class="right"><?= number_format($produkt['Nettopreis']*1.19, 2, ',', ' ') . ' €'; ?></td>
             <td role="cell" class="center"><?= $produkt['Steuerklasse']; ?></td>
             <td role="cell">
-                <div>
                 <form action="edit_product.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $produkt['ArtikelID']; ?>">
                     <button type="submit"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -62,7 +61,6 @@ if (!isset($_SESSION["userid"])) {
                     <input type="hidden" name="id" value="<?php echo $produkt['ArtikelID']; ?>">
                     <button type="delete" onclick="return confirm('Bist du sicher das du die Daten löschen möchtest?');"><i class="fa-solid fa-trash"></i></button>
                 </form>
-                </div>
             </td>
         </tr>
     <?php endforeach; ?>
