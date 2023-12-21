@@ -8,8 +8,18 @@ Entweder in der phpMyAdmin Oberfläche manuell eine Datenbank erstellen, dessen 
 
 `CREATE DATABASE IF NOT EXISTS chemperator CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
 
-Danach, um den Prozess einfach zu halten, erscheint unser Konfigurations-Assistent für das Setzen der globalen Einstellungen der Datenbank (Benutzername, Passwort, Host und Datenbankname). Diese Informationen werden in der Datei `config.php` gespeichert.
+Anschließend bitte im root eine config.php erstellen, welche wie folgt aussieht:
 
-Importieren Sie die Datei `chemperator.sql` in Ihre Datenbank.
+```
+<?php
+
+$dbUsername = "username";
+$dbPassword = "password";
+$dbHost = "localhost";
+$dbName = "dbname";
+
+```
+
+Die DB wird dabei höchstwahrscheinlich "chemperator" heißen, wenn Sie die obigen Anleitung befolgen.
 
 Bei Rückfragen bitte einfach melden.
